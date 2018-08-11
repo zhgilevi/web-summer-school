@@ -1,9 +1,9 @@
 <link href='style.css' rel='stylesheet' type='text/css' >
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<a href='/'>Главная</a>
-<a  href="/?name=main"> Новости </a>
-<a  href="/?name=contact"> Обратная связь </a>
-<a href="/?name=admin"> для админа</a>
+<a href='/' class='menu'>Главная</a>
+<a  href="/?name=main" class='menu'> Новости </a>
+<a  href="/?name=contact" class='menu'> Обратная связь </a>
+<a href="/?name=admin" class='menu'> для админа</a>
 <br>
 <hr style="width: 100%; color: black; height: 1px; background-color:black;" />
 <br><br>
@@ -34,7 +34,8 @@ if (!isset($_GET['name'])){
     <li>php7</li>
     <li>mysql v. 14.14</li>
 </ul>
-
+<br><br>
+<p> исходники проекта лежат <a href='https://github.com/zhgilevi/web-summer-school'>тут</a></p>
 <?php }
 else if ($_GET['name'] == 'main'){?>
 <h1 class="align-top" align='center'> Новости админа </h1>
